@@ -4,6 +4,8 @@ All notable changes to Lorde OS are documented here. The format follows Keep a C
 
 ## 1.0.1, 2026-11-09
 
+- Added a legacy build for Android 5.0 and newer: LordeOS-1.0.1-legacy.apk is the same complete workstation (desktop shell, Wine and Box64, DXVK and VKD3D, rootless Linux userspace, verified developer environment) built to install on older phones. It differs from the standard build only in the install floor; on Android 5.0 to 6.x there is no Vulkan loader, so Windows applications render through the phone's own OpenGL ES driver while the shell, terminal and Linux userspace are unaffected.
+
 - Install fix for older devices: the package now targets Android 7.0 (API 24) instead of 7.1, so phones on Android 7.0 no longer refuse the install with a parse error. The bundled graphics backend uses the Android Vulkan loader, which sets Android 7.0 as the floor for the full workstation. The APK is signed with the v2 and v3 signature schemes.
 
 First public release of Lorde OS, published with a proper release signature.

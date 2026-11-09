@@ -62,6 +62,7 @@ The latest release is on the [GitHub Releases page](https://github.com/LordeStud
 | Asset | Size | Notes |
 |---|---|---|
 | `LordeOS-1.0.1.apk` | see release page | Full workstation, arm64-v8a, Android 7.0+ |
+| `LordeOS-1.0.1-legacy.apk` | see release page | Same complete workstation, built to install on Android 5.0+ |
 | `SHA256SUMS.txt` | small | SHA-256 checksums for both APKs |
 
 Both APKs are signed with the Lorde Studios release key. Verify the download against the checksums before installing.
@@ -79,7 +80,7 @@ The first launch provisions the verified runtime payloads, which needs about 1.2
 
 ## System requirements
 
-- Android 7.0 (API 24) or newer
+- Android 7.0 (API 24) or newer for the standard build, Android 5.0 (API 21) or newer for the legacy build
 - arm64-v8a CPU. 32-bit-only devices are not supported.
 - 8 GB RAM or more.
 - About 1.2 GB of free storage.
