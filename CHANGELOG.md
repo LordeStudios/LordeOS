@@ -4,14 +4,14 @@ All notable changes to Lorde OS are documented here. The format follows Keep a C
 
 ## 1.0.1, 2026-11-09
 
+- Install fix for older devices: the package now targets Android 7.0 (API 24) instead of 7.1, so phones on Android 7.0 no longer refuse the install with a parse error. The bundled graphics backend uses the Android Vulkan loader, which sets Android 7.0 as the floor for the full workstation. The APK is signed with the v2 and v3 signature schemes.
+
 First public release of Lorde OS, published with a proper release signature.
 
 ### Packaging and signing
 
 - Release builds are signed with a dedicated Lorde Studios release key instead of the shared debug key. This removes a known trigger for the "signed with a debug key" Play Protect warning on sideloaded builds; a Play Protect notice can still appear for any app installed outside the Play Store.
 - The full build keeps `targetSdk` at 28 by design. Executing the Wine, Box64 and Linux userspace binaries from the app's private storage is only permitted for apps targeting API 28 or lower on modern Android; targeting 29 or newer moves the process into a stricter SELinux domain where every extracted binary fails to launch. The same constraint keeps Termux and Winlator at API 28. Foreground services declare explicit service types anyway so the code is ready for future target changes, and the notification permission is requested when the user asks for an update check.
-- The companion build supports Android 7.0 (API 24) and newer. The full build requires Android 7.1 (API 25) because its bundled graphics backend requires API 25.
-- The companion build ships generated launcher icons (regular and round). The full build keeps its vector launcher icon.
 
 ### Developer environment
 

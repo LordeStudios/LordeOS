@@ -26,10 +26,7 @@ Everything runs on the phone. No PC is required.
 
 | Build | For | Requirements |
 |---|---|---|
-| **Lorde OS** (full) | The complete workstation: Windows containers, Linux userspace, terminal, developer tools, graphics stack | Android 7.1 or newer, arm64-v8a, about 1.2 GB free |
-| **Lorde Companion** (light) | The lightweight surface for weaker devices: a WebView control surface and the local companion bridge, without the heavy Windows runtime payloads | Android 7.0 or newer, any CPU architecture, about 60 MB free |
-
-If your device is a current flagship, install Lorde OS. If storage, memory or the CPU translation overhead is a concern, install Lorde Companion: it keeps the local companion bridge, the WebView-based control surface and device pairing, and leaves out the runtime that needs the headroom.
+| **Lorde OS** (full) | The complete workstation: Windows containers, Linux userspace, terminal, developer tools, graphics stack | Android 7.0+, arm64-v8a, about 1.2 GB free |
 
 ## Features
 
@@ -64,8 +61,7 @@ The latest release is on the [GitHub Releases page](https://github.com/LordeStud
 
 | Asset | Size | Notes |
 |---|---|---|
-| `LordeOS-1.0.1.apk` | see release page | Full workstation, arm64-v8a, Android 7.1 or newer |
-| `LordeCompanion-1.0.1.apk` | see release page | Lightweight build for weaker devices, any CPU architecture, Android 7.0 or newer |
+| `LordeOS-1.0.1.apk` | see release page | Full workstation, arm64-v8a, Android 7.0+ |
 | `SHA256SUMS.txt` | small | SHA-256 checksums for both APKs |
 
 Both APKs are signed with the Lorde Studios release key. Verify the download against the checksums before installing.
@@ -83,10 +79,10 @@ The first launch provisions the verified runtime payloads, which needs about 1.2
 
 ## System requirements
 
-- Android 7.1 (API 25) or newer for the full build, Android 7.0 (API 24) or newer for the companion build.
-- arm64-v8a CPU for the full build. 32-bit-only devices are not supported by the full build; the companion build has no native libraries and runs on any ABI.
-- 8 GB RAM or more for the full build, 2 GB for the companion build.
-- About 1.2 GB of free storage for the full build, 60 MB for the companion build.
+- Android 7.0 (API 24) or newer
+- arm64-v8a CPU. 32-bit-only devices are not supported.
+- 8 GB RAM or more.
+- About 1.2 GB of free storage.
 
 ## Compatibility
 
@@ -114,7 +110,7 @@ Lorde OS runs application containers and a rootless Linux userspace on your devi
 ## Support
 
 - Questions and help: the [issue tracker](https://github.com/LordeStudios/LordeOS/issues) (please search before opening a new issue).
-- Bug reports: [open an issue](https://github.com/LordeStudios/LordeOS/issues/new) with the Lorde OS version, Android version, device model and whether you installed the full or companion build.
+- Bug reports: [open an issue](https://github.com/LordeStudios/LordeOS/issues/new) with the Lorde OS version, Android version, device model and your device model.
 - Product site: [studios.lordemaximus.com](https://studios.lordemaximus.com)
 
 ## Publisher
