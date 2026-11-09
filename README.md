@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://github.com/LordeStudios/LordeOS/releases/latest"><img alt="Release" src="https://img.shields.io/badge/release-v1.0.1-2ea043" /></a>
-  <img alt="Platform" src="https://img.shields.io/badge/platform-Android%207.1%2B%20arm64-v8a-blue" />
+  <img alt="Platform" src="https://img.shields.io/badge/platform-Android%207.1%2B%20arm64--v8a-blue" />
   <img alt="License" src="https://img.shields.io/badge/license-Proprietary-lightgrey" />
 </p>
 
